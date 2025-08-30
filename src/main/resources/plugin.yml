@@ -1,4 +1,18 @@
 name: Core
 version: '1.0'
+author: 0Pink
+description: Core plugin for various utilities
 main: pink.core.Core
 api-version: '1.21'
+
+commands:
+  announce:
+    description: Broadcast a message to everyone
+    usage: /announce <message>
+    permission: pink.announce
+    aliases: [bc, broadcast]
+
+permissions:
+  pink.announce:
+    description: Allows /announce
+    default: op
