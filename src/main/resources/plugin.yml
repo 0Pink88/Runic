@@ -1,6 +1,6 @@
 name: Core
 version: '1.0'
-author: 0Pink
+author: 0Pink, x1D
 description: Core plugin for various utilities
 main: pink.core.Core
 api-version: '1.21'
