@@ -1,12 +1,10 @@
 package pink.core;
 
 import org.bukkit.Bukkit;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.event.Listener;
-import pink.core.Commands.Admin;
+import pink.core.Commands.announceCmd;
 
 public final class Core extends JavaPlugin implements Listener {
 
@@ -15,7 +13,8 @@ public final class Core extends JavaPlugin implements Listener {
         registerEvents(this, this);
 
         // Register commands
-        Bukkit.getPluginCommand("announce").setExecutor(new Admin());
+        Bukkit.getPluginCommand("announce").setExecutor(new announceCmd());
+        Bukkit.getPluginCommand("secretagentman").setExecutor(new samCmd());
     }
 
 

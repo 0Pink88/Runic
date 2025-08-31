@@ -6,7 +6,7 @@ import org.bukkit.command.CommandSender;
 
 import static org.bukkit.Bukkit.getServer;
 
-public class Admin implements CommandExecutor {
+public class announceCmd implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
