@@ -1,5 +1,5 @@
-name: Corepermission: 
-
+name: Core
+version: 0.1.0
 author: 0Pink, x1D
 description: Core plugin for various utilities
 main: pink.core.Core
@@ -9,9 +9,12 @@ commands:
   announce:
     description: Broadcast a message to everyone
     usage: /announce <message>
-    permission: pink.announce
-    aliases: [bc, broadcast]secretagentman:
-    description: runic.sam
+    permission: runic.announce
+    aliases: [bc, broadcast]
+  secretagentman:
+    description: You know what it does... # what white boy said
+    usage: /secretagentman
+    permission: runic.sam
     aliases: [sam, spy]
 
 permissions:

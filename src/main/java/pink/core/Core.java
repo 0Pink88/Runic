@@ -5,12 +5,14 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.event.Listener;
 import pink.core.Commands.announceCmd;
+import pink.core.Commands.samCmd;
+import pink.core.Events.commandListener;
 
 public final class Core extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        registerEvents(this, this);
+        registerEvents(this, new commandListener());
 
         // Register commands
         Bukkit.getPluginCommand("announce").setExecutor(new announceCmd());
